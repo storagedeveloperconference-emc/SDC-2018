@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<!-- saved from url=(0061)https://www.snia.org/events/storage-developer/presentations18 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js"><head profile="http://www.w3.org/1999/xhtml/vocab"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./2018 SDC Presentations _ SNIA_files/a130e47fb0"></script><script src="./2018 SDC Presentations _ SNIA_files/nr-1118.min.js.download"></script><script type="text/javascript" async="" src="./2018 SDC Presentations _ SNIA_files/linkid.js.download"></script><script type="text/javascript" async="" src="./2018 SDC Presentations _ SNIA_files/tracking.js.download"></script><script async="" src="./2018 SDC Presentations _ SNIA_files/analytics.js.download"></script><script async="" src="./2018 SDC Presentations _ SNIA_files/analytics.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.snia.org/sites/all/themes/snia_event2017/favicon.ico" type="image/vnd.microsoft.icon">
+<meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=no;">
+<meta name="description" content="*/">
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)">
+<link rel="canonical" href="https://www.snia.org/events/storage-developer/presentations18">
+<link rel="shortlink" href="https://www.snia.org/node/4910">
+  <title>2018 SDC Presentations | SNIA</title>
+  <link type="text/css" rel="stylesheet" href="./2018 SDC Presentations _ SNIA_files/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all">
+<link type="text/css" rel="stylesheet" href="./2018 SDC Presentations _ SNIA_files/css_o4KcP7zxCf--GnPVD-qRv-UHh_9w08pqx00AmVrHg9o.css" media="all">
+<link type="text/css" rel="stylesheet" href="./2018 SDC Presentations _ SNIA_files/css_MnXiytJtb186Ydycnpwpw34cuUsHaKc80ey5LiQXhSY.css" media="all">
+<link type="text/css" rel="stylesheet" href="./2018 SDC Presentations _ SNIA_files/css_XXdDDGrFjRjG-PeVuEUmWXVLaPZHTdB1MXnpoRTDffg.css" media="all">
+<link type="text/css" rel="stylesheet" href="./2018 SDC Presentations _ SNIA_files/css(1)" media="all">
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.snia.org/sites/all/themes/snia_event2017/css/ie.css?pmkt9g" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="https://www.snia.org/sites/all/themes/snia_event2017/css/ie6.css?pmkt9g" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="./2018 SDC Presentations _ SNIA_files/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js.download"></script>
+<script type="text/javascript" src="./2018 SDC Presentations _ SNIA_files/js_gPqjYq7fqdMzw8-29XWQIVoDSWTmZCGy9OqaHppNxuQ.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-5907005-1", {"cookieDomain":"auto"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="./2018 SDC Presentations _ SNIA_files/js_vToBRgD4_F7CscoYlq_lreY6lgMTnIDmN6Uj-9UNfBE.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"snia_event2017","theme_token":"rOUgPMb0XyK1UrMl-a2_S4NN9vLdpzCctfby8aYKmgY","js":{"sites\/all\/modules\/livechat\/livechat.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/snia_event2017\/js\/jquery.mobile.custom.min.js":1,"sites\/all\/themes\/snia_event2017\/js\/jquery.effects.core.min.js":1,"sites\/all\/themes\/snia_event2017\/js\/hammer.min.js":1,"sites\/all\/themes\/snia_event2017\/js\/jquery.hammer.js":1,"sites\/all\/themes\/snia_event2017\/js\/jquery.corner.js":1,"sites\/all\/themes\/snia_event2017\/js\/jquery.mousewheel.js":1,"sites\/all\/themes\/snia_event2017\/js\/jquery.jscrollpane.min.js":1,"sites\/all\/themes\/snia_event2017\/js\/jquery.color.js":1,"sites\/all\/themes\/snia_event2017\/js\/jquery.srslider.js":1,"sites\/all\/themes\/snia_event2017\/js\/functions.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/menu_attach_block\/menu_attach_block.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/quiz\/quiz.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/snia_event2017\/css\/style.css":1,"https:\/\/fonts.googleapis.com\/css?family=Roboto:300i,400,700|Roboto+Slab|Rum+Raisin":1,"sites\/all\/themes\/snia_event2017\/css\/ie.css":1,"sites\/all\/themes\/snia_event2017\/css\/ie6.css":1}},"better_exposed_filters":{"views":{"header_block":{"displays":{"logo_block":{"filters":[]},"slides":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"LiveChat":{"license":"10482637","params":[],"visitor":[]}});
+//--><!]]>
+</script>
+<style>.srs {padding-bottom:30px; margin:0 auto; -webkit-overflow-scrolling: touch;}.hwacc {-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}.srs.scaled, .srs.scaled .slide, .srs.expanded .slide {width:100% !important}.srs.expanded .field-item, .views-row {margin:0 auto; width:auto}.srs .scaled img, .srs.scaled img {width:100% !important; height:auto !important}.srs.scaled .slide.height img {width:auto !important; height:auto !important}.srs .btn-prev, .srs .btn-next	{cursor:pointer}.srs .nav {width:100%; bottom:4px; text-align:center}.srs .btn-nav {display:inline; padding:3px 5px; cursor:pointer}</style><style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 400;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 500;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 700;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-Black.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 900;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2') format('woff2');
+}</style></head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-4910 node-type-basic-page" style="">
+  <div id="skip-link">
+    <a href="https://www.snia.org/events/storage-developer/presentations18#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+  <div id="header" class="without-secondary-menu "><div class="section clearfix">
+
+    
+          <div id="name-and-slogan" class="element-invisible">
+
+                              <div id="site-name" class="element-invisible">
+              <strong>
+                <a href="https://www.snia.org/" title="Home" rel="home"><span>SNIA</span></a>
+              </strong>
+            </div>
+                  
+                  <div id="site-slogan" class="element-invisible">
+            Advancing Storage and Information Technology          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+      <div class="region region-header">
+    <div id="block-views-header-block-logo-block" class="block block-views">
+
+    
+  <div class="content">
+    <div class="view view-header-block view-id-header_block view-display-id-logo_block view-dom-id-139d9e6eb7e3affb59407b4bfe8f181b">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-dates-loc">        <div class="field-content"><p><strong>September 23 - 26, 2019<br>
+	Santa Clara, CA</strong></p>
+</div>  </div>  
+  <div class="views-field views-field-field-event-logo">        <div class="field-content"><img typeof="foaf:Image" src="./2018 SDC Presentations _ SNIA_files/logo_sdc_2019.png" width="215" height="88" alt=""></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-menu-block-26" class="block block-menu-block">
+
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-26 menu-name-main-menu parent-mlid-0 menu-level-3">
+  <ul class="menu clearfix"><li class="first leaf menu-mlid-747"><a href="https://www.snia.org/events/storage-developer" title=" SDC Home"> <span></span> SDC Home</a></li>
+<li class="expanded active-trail menu-mlid-2626"><a href="https://sniasdc18.pathable.com/meetings?classes[]=Groups%3A%3AMeetings%3A%3AMeeting" title="What&#39;s On Agenda &amp; More" class="active-trail"> <span>What's On</span> Agenda &amp; More</a><ul class="menu clearfix"><li class="first leaf menu-mlid-2691"><a href="https://sniasdc18.pathable.com/meetings?classes[]=Groups%3A%3AMeetings%3A%3AMeeting" title=" SDC 2018 Conference Agenda"> <span></span> SDC 2018 Conference Agenda</a></li>
+<li class="leaf active-trail active menu-mlid-2845"><a href="https://www.snia.org/events/storage-developer/presentations18" title=" SDC 2018 Presentations" class="active-trail active"> <span></span> SDC 2018 Presentations</a></li>
+<li class="last leaf menu-mlid-2744"><a href="http://eepurl.com/dpHyIj" title=" Subscribe to SDC Updates"> <span></span> Subscribe to SDC Updates</a></li>
+</ul></li>
+<li class="expanded menu-mlid-2627"><a href="https://sniasdc18.pathable.com/speakers?per_page=50&amp;with[filter_scope]=speakers" title="Our Speakers"> <span>Our</span> Speakers</a><ul class="menu clearfix"><li class="first leaf menu-mlid-2819"><a href="https://sniasdc18.pathable.com/speakers?per_page=50&amp;with[filter_scope]=speakers" title=" SDC 2018 Conference Speakers"> <span></span> SDC 2018 Conference Speakers</a></li>
+<li class="last leaf menu-mlid-760"><a href="https://www.snia.org/events/storage-developer/speaker_info">Speak at SDC</a></li>
+</ul></li>
+<li class="expanded menu-mlid-755"><a href="https://www.snia.org/events/storage-developer/registration" title="Register &amp; Plan Your Visit"> <span>Register &amp;</span> Plan Your Visit</a><ul class="menu clearfix"><li class="first leaf menu-mlid-1417"><a href="https://www.snia.org/events/storage-developer/why_attend">Why Attend SDC</a></li>
+<li class="leaf menu-mlid-2820"><a href="https://www.snia.org/events/storage-developer/registration" title=" Registration Information"> <span></span> Registration Information</a></li>
+<li class="last leaf menu-mlid-756"><a href="https://www.snia.org/events/storage-developer/venue">Venue/Accommodations</a></li>
+</ul></li>
+<li class="leaf menu-mlid-759"><a href="https://www.snia.org/events/storage-developer/sponsorship" title="Looking to Sponsor/Exhibit"> <span>Looking to</span> Sponsor/Exhibit</a></li>
+<li class="expanded menu-mlid-2058"><a href="https://www.snia.org/events/storage-developer/webcasts" title="Videos, Podcasts &amp; Archives"> <span>Videos, Podcasts</span> &amp; Archives</a><ul class="menu clearfix"><li class="first leaf menu-mlid-2821"><a href="https://www.snia.org/events/storage-developer/webcasts" title=" SDC Videos"> <span></span> SDC Videos</a></li>
+<li class="leaf menu-mlid-2355"><a href="https://www.snia.org/events/storage-developer/podcasts" title=" SDC Podcasts"> <span></span> SDC Podcasts</a></li>
+<li class="last expanded menu-mlid-761"><a href="https://www.snia.org/events/storage-developer/archive">SDC Archives</a><ul class="menu clearfix"><li class="first leaf active menu-mlid-2828"><a href="https://www.snia.org/events/storage-developer/presentations18" class="active">2018 SDC Presentations</a></li>
+<li class="leaf menu-mlid-2592"><a href="https://www.snia.org/events/storage-developer/agenda/2016">2016 Storage Developer Conference Agenda</a></li>
+<li class="leaf menu-mlid-2358"><a href="https://www.snia.org/events/storage-developer/agenda/2016/precon">2016 Pre-Conference Primer Agenda</a></li>
+<li class="leaf menu-mlid-2366"><a href="https://www.snia.org/events/storage-developer/presentations16">2016 SDC Presentations</a></li>
+<li class="leaf menu-mlid-2591"><a href="https://www.snia.org/events/storage-developer/archive/2016/speakers">2016 Storage Developer Conference Speakers</a></li>
+<li class="leaf menu-mlid-1582"><a href="https://www.snia.org/events/storage-developer/agenda/abstracts/2016">2016 Storage Developer Conference Abstracts</a></li>
+<li class="leaf menu-mlid-2178"><a href="https://www.snia.org/events/storage-developer/archive/2015/agenda">2015 Storage Developer Conference Agenda</a></li>
+<li class="leaf menu-mlid-2180"><a href="https://www.snia.org/events/storage-developer/archive/2015/precon-agenda">2015 Pre-Conference Primer Agenda</a></li>
+<li class="leaf menu-mlid-2044"><a href="https://www.snia.org/events/storage-developer/presentations15">2015 SDC Presentations</a></li>
+<li class="leaf menu-mlid-2179"><a href="https://www.snia.org/events/storage-developer/archive/2015/abstracts">2015 Storage Developer Conference Abstracts</a></li>
+<li class="leaf menu-mlid-2177"><a href="https://www.snia.org/events/storage-developer/archive/2015/speakers">2015 Storage Developer Conference Speakers</a></li>
+<li class="leaf menu-mlid-1646"><a href="https://www.snia.org/events/storage-developer/archive/2014/agenda">2014 Storage Developer Conference Agenda</a></li>
+<li class="leaf menu-mlid-758"><a href="https://www.snia.org/events/storage-developer/presentations14">2014 Presentations</a></li>
+<li class="leaf menu-mlid-1648"><a href="https://www.snia.org/events/storage-developer/archive/2014/abstracts" title=" 2014 Storage Developer Conference Abstracts"> <span></span> 2014 Storage Developer Conference Abstracts</a></li>
+<li class="leaf menu-mlid-1647"><a href="https://www.snia.org/events/storage-developer/archive/2014/speakers">2014 SDC Featured Speakers</a></li>
+<li class="leaf menu-mlid-1649"><a href="https://www.snia.org/events/storage-developer2013/agenda2013">2013 Storage Developer Conference Agenda</a></li>
+<li class="leaf menu-mlid-2061"><a href="https://www.snia.org/events/storage-developer2013/presentations13">2013 SDC Presentations</a></li>
+<li class="leaf menu-mlid-1651"><a href="https://www.snia.org/events/storage-developer2013/abstracts" title=" 2013 Storage Developer Conference Abstracts"> <span></span> 2013 Storage Developer Conference Abstracts</a></li>
+<li class="leaf menu-mlid-2062"><a href="https://www.snia.org/events/storage-developer2013/speakers">2013 SDC Featured Speakers</a></li>
+<li class="leaf menu-mlid-1652"><a href="https://www.snia.org/events/storage-developer2012/agenda2012">2012 Storage Developer Conference Agenda</a></li>
+<li class="leaf menu-mlid-1653"><a href="https://www.snia.org/events/storage-developer2012/presentations12">2012 SDC Presentations</a></li>
+<li class="leaf menu-mlid-1655"><a href="https://www.snia.org/events/storage-developer2012/abstracts">2012 Agenda Abstracts</a></li>
+<li class="leaf menu-mlid-1654"><a href="https://www.snia.org/events/storage-developer2012/speakers">2012 SDC Featured Speakers</a></li>
+<li class="leaf menu-mlid-1808"><a href="https://www.snia.org/events/storage-developer2011/agenda2011">2011 Storage Developer Conference Agenda</a></li>
+<li class="leaf menu-mlid-1812"><a href="https://www.snia.org/events/storage-developer2011/2011presentations">2011 SDC Presentations</a></li>
+<li class="leaf menu-mlid-1818"><a href="https://www.snia.org/events/storage-developer2011/speakers">2011 SDC Featured Speakers</a></li>
+<li class="leaf menu-mlid-1822"><a href="https://www.snia.org/events/storage-developer2011/agenda2011/abstracts">2011 Agenda Abstracts</a></li>
+<li class="leaf menu-mlid-1982"><a href="https://www.snia.org/events/storage-developer2011/plugfest">2011 SDC Plugfests</a></li>
+<li class="leaf menu-mlid-1826"><a href="https://www.snia.org/events/storage-developer2011/archives/2010presentations">2010 Storage Developer Conference Presentations</a></li>
+<li class="leaf menu-mlid-1828"><a href="https://www.snia.org/events/storage-developer2011/archives/2010speakers">2010 SDC Featured Speakers</a></li>
+<li class="leaf menu-mlid-1830"><a href="https://www.snia.org/events/storage-developer2011/archives/2010abstracts">2010 SDC Agenda Abstracts</a></li>
+<li class="leaf menu-mlid-1832"><a href="https://www.snia.org/events/storage-developer2011/archives/2009presentations">2009 Storage Developer Conference Presentations</a></li>
+<li class="leaf menu-mlid-1833"><a href="https://www.snia.org/events/storage-developer2011/archives/2009speakers">2009 SDC Speakers</a></li>
+<li class="leaf menu-mlid-1834"><a href="https://www.snia.org/events/storage-developer2011/archives/2008presentations">2008 Storage Developer Conference Presentations</a></li>
+<li class="last leaf menu-mlid-2829"><a href="https://www.snia.org/events/storage-developer/presentations17">2017 SDC Presentations</a></li>
+</ul></li>
+</ul></li>
+<li class="leaf menu-mlid-757"><a href="https://www.snia.org/events/storage-developer/special-events" title="SDC Special Events"> <span>SDC</span> Special Events</a></li>
+<li class="expanded menu-mlid-2859"><a href="https://www.snia.org/events/storage-developer-conference/international" title="SDC International"> <span>SDC</span> International</a><ul class="menu clearfix"><li class="first leaf menu-mlid-2861"><a href="https://www.snia.org/events/sdcemea" title=" SDC EMEA"> <span></span> SDC EMEA</a></li>
+<li class="last leaf menu-mlid-2860"><a href="https://www.snia.org/events/sdcindia" title=" SDC India"> <span></span> SDC India</a></li>
+</ul></li>
+<li class="last leaf menu-mlid-2851"><a href="https://www.snia.org/" title="SNIA Home"> <span>SNIA</span> Home</a></li>
+</ul></div>
+  </div>
+</div>
+  </div>
+
+    
+    
+  </div>
+  </div> <!-- /.section, /#header -->
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+                
+               <div class="tabs">
+              	          </div>
+           <div id="sidebar-second" class="column sidebar"><div class="section">
+                <div id="rightcallout">
+			            
+      </div></div></div> <!-- /#rightcallout /.section, /#sidebar-second -->
+	    
+    <div id="content" class="column"><div class="section">
+		          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="https://www.snia.org/">Home</a> » <a href="https://www.snia.org/news-events">News &amp; Events</a> » <a href="https://www.snia.org/events/storage-developer">Storage Developer Conference</a> » <a href="https://sniasdc18.pathable.com/meetings?classes[]=Groups%3A%3AMeetings%3A%3AMeeting" title="What&#39;s On">Agenda &amp; More</a> » SDC 2018 Presentations</div></div>
+            
+            <a id="main-content"></a>
+      	  		                        <h1 class="title " id="page-title">
+              2018 SDC Presentations            </h1>
+                	  
+                  
+        <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-4910" class="node node-basic-page node-promoted node-full " about="/events/storage-developer/presentations18" typeof="sioc:Item foaf:Document">
+
+      <span property="dc:title" content="2018 SDC Presentations" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content node-content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p></p>
+<style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+table#tutorialtracks { background-color:#d1d1d3;}
+table#tutorialtracks tr td {width: 33%;font-size:14px; background-color:#fff; }
+table#tutorialtracks tr#managers td {white-space:nowrap;font-size:12px;}
+table#tutorialtracks tr#managers td span {font-size:14px;font-weight:bold;display:block;}
+table#tutorialtracks tr td a {font-size:12px;display:block;white-space:nowrap;}
+table#tutorialtracks tr td span.title {font-weight:700;display:block;margin-bottom:3px;font-size:14px;}
+table#tutorialtracks tr td span.author {display:block;font-style:italic;font-size:14px;white-space:nowrap;}
+table#tutorialtracks tr td span.moreinfo {display:block;font-style:italic;font-size:14px;margin-top:1em;}
+table#tutorialtracks tr td a.download {background: url(/sites/default/files/icon-pdf.gif) no-repeat left;padding-left:20px;margin-top:1em;}
+		table#tutorialtracks tr td a.zip {background: url(/sites/default/files/icon-zip.png) no-repeat left;padding-left:30px;margin-top:1em;font-size: 14px}
+table#tutorialtracks tr td a.video {background: url(/sites/default/files/video_icon15x12.png) no-repeat left;padding-left:20px;margin-top:1em;}
+div#groupinfo {background:url(/commonimages/bg_pinstripes_w.gif) #fff;float:right;padding:1em;margin:1em;border:1px solid #ccc;}
+div#groupinfo h2 {margin-top:0;color:#333;}
+div#abstracts h2 {border-bottom:1px solid #ccc;}
+div#abstracts h3 {margin-bottom:0;}
+div#abstracts span.author, div#abstracts .moreinfo {font-style:italic;display:block;}
+div#abstracts a.download {background: url(/sites/default/files/icon-pdf.gif) no-repeat left;padding-left:20px;display:block;}
+div#abstracts a.video {background: url(/sites/default/files/video_icon15x12.png) no-repeat left;padding-left:20px;margin-top:1em;}
+.tutorialheading {border-bottom:1px solid #ccc;font-size:18px;font-weight: bold;color:#fff;background:#6a4791;}
+.tutorialheading a{line-height:22px;text-decoration:none;border:1px solid #fff;color:#000;padding:2px 8px;;background:#cccccc;white-space:no-wrap;font-weight:600;}
+.trackmanager {font-size: 14px;font-weight: 400;margin-bottom: 4px;}
+.viewabstracts {float:right;margin-top:10px;margin-right:20px;white-space:no-wrap;}
+.tutorials-ul { margin-top:0; padding-top:0; }
+.tutorials-ul-tall li { padding:5px 0; }
+.tutorials-small { font-size:14px; }
+.tutorials-box { border:#d1d1d3 1px solid; background-color:#ededed; float:right; width:150px; margin:10px; padding:10px;}
+.tutorials-box h2 { margin:0; padding:0; }
+.tutorials-box p { margin-bottom:0; padding-bottom:0; }
+h3 { font-weight:bold }	
+/*--><!]]>*/
+</style><p><a id="top" name="top"></a></p>
+<!--<p><strong><a class="download" href="/sites/default/files/SDC/2018/SNIA-SDC-2018-Presentations.zip" target="_blank">Download All SNIA SDC 2018 Presentations</a></strong> [215MB zip]</p>--><table><tbody><tr><td valign="top" width="337">
+<ul><li><a href="https://www.snia.org/events/storage-developer/presentations18#big_analytic_IoT">Big Data / Analytics / IoT</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#cloud">Cloud Storage</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#data_protection_cap_opt">Data Protection and Capacity Optimization</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#erasure">Erasure Coding</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#etc">/etc</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#file_sys">File Systems</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#keynote">Keynote Speakers/General Sessions</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#NVMe">NVMe</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#pm">Persistent Memory</a></li>
+</ul></td>
+<td valign="top" width="294">
+<ul><li><a href="https://www.snia.org/events/storage-developer/presentations18#rdma">RDMA</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#smb">SMB</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#solid_nvm_pm_nvdimm">Solid State Storage, NVM, PM, NVDIMM</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#stor_arch">Storage Architecture</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#stor_perf_workloads">Storage Performance / Workloads</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#stor_res_mngmnt">Storage Resource Management</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#security">Storage Security and Identity Management</a></li>
+<li><a href="https://www.snia.org/events/storage-developer/presentations18#backup">Backup Presentations</a></li>
+</ul></td>
+</tr></tbody></table><p><a id="big_analytic_IoT" name="big_analytic_IoT"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Big Data / Analytics / IoT</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Big_Data_Analytics_IoT.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Data Architecture for Data-Driven Enterprises: A Storage Practitioner’s View</span><span class="author"> Deepti Aggarwal</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Big_Data_Analytics_IoT/Aggarwal_Data_Architecture_for_Data-Driven_Enterprises.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/QwaZOUGSUt8" target="_blank">Watch Video</a></td>
+<td><span class="title">Correlative Analytics Methods in Large Scale Network Infrastructure</span><span class="author">Hariharan Krishnaswamy</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Big_Data_Analytics_IoT/Krishnaswamy_Hariharan_Correlative_Analytic_Methods_in_Large_Scale_Network_Infrastructure.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/yGlTn76M_9U" target="_blank">Watch Video</a></td>
+<td><span class="title">Some New Thoughts on Anomaly Detection and Time Series Modeling</span><span class="author">Rachel Traylor</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Big_Data_Analytics_IoT/Traylor_Rachel_Some_New_Thoughts_on_Anomaly_Detection.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/J_UjmG0miG8" target="_blank">Watch Video</a></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="cloud" name="cloud"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Cloud Storage</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Ephemeral Storage for Serverless Analytics</span><span class="author">Ana Klimovic</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Klimovic_Ana_Pocket_Elastic_Ephemeral_Storage_for_Serverless_Analytics.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/hUMz1WZp3Wo" target="_blank">Watch Video</a></td>
+<td><span class="title">Cloud Storage Pluggable Access Control </span><span class="author">David Slik</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Slik_David_Cloud_Storage_Pluggable_Access_Control.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/_dWgbzk9FrY" target="_blank">Watch Video</a></td>
+<td><span class="title">Using CDMI to Create/Backup, Restore and Replicate Storage Objects and Data Across Storage Vendors and Cloud Storage (Swift, S3, Ceph) </span><span class="author">Dhishankar Sengupta and Umang Kumar</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Sengupta_D_Kumar_U_Using_CDMI_to_Create_Backup_Restore_and_Replicate_Storage_Objects_and_Data.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/LBFzR2WdrNc" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Experiments in Storing Scientific Research Data in Cloud Cold Storage Services</span><span class="author">Hiroshi Yoshida</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Yoshida_Hiroshi_Experiments_in_Storing_Scientific_Research_Data_in_Cloud_Cold_Storage_Services.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/LBFzR2WdrNc" target="_blank">Watch Video</a></td>
+<td><span class="title">Managing Disk Volumes in Kubernetes: Current Capabilities and Future Opportunities </span><span class="author">Saad Ali and Nikhil Kasinadhuni</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Ali_Kasinadhuni_Managing_Disk_Volumes_in_Kubernetes.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/rlgyjrhBE8s" target="_blank">Watch Video</a></td>
+<td><span class="title">Bulletproofing Stateful Applications on Kubernetes </span><span class="author">Dinesh Israni</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Israni_Dinesh_Bulletproofing_Stateful_Applications_on_Kubernetes.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/rN__c2NIiUE" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Stateful Applications in Kubernetes: Ready for Production </span><span class="author">Niraj Tolia and Julio Lopez</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Tolia_N_Lopez_J_Stateful_Applications_in_Kubernetes_Ready_for_Production.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/g_JIOBce-mw" target="_blank">Watch Video</a></td>
+<td><span class="title">OpenStack Cinder as an SDS API </span><span class="author">Sean McGinnis</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/McGinnis_OpenStack_Cinder_SDS_API.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/4-tz23Mks4k" target="_blank">Watch Video</a></td>
+<td><span class="title">Container Attached Storage (CAS) with openEBS </span><span class="author">Jeffry Molanus</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Molanus_Jeffry_Container_Attached_Storage.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/VfeNLDxxpco" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Achieving 10-Million IOPS from a single VM on Windows Hyper-V </span><span class="author">Liang Yang and Danyu Zhu</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Yang_L_Zhu_D_Achieving_10-Million_IOPS_from_a_single_VM_on_Windows_Hyper-V.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/f398DoRsyqk" target="_blank">Watch Video</a></td>
+<td><span class="title">Storing at the Edge - An Architectural Approach </span><span class="author">Vinod Eswaraprasad</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Cloud_Storage/Eswaraprasad_Storing_at_the_Edge.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/H8pEgTJ-MEg" target="_blank">Watch Video</a></td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="data_protection_cap_opt" name="data_protection_cap_opt"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Data Protection and Capacity Optimization</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/DPCO.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">How DPDK can Deflate your Data!</span><span class="author">Fiona Trahe and Lee Daly</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/DPCO/Trahe_F_Daly_L_Deflate_Your_Data_with_DPDK.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/BSQ6Bqt4vS0" target="_blank">Watch Video</a></td>
+<td><span class="title">Combating Evolving Ransomware at the Block Level</span><span class="author"> Michael Dexter</span> <a class="download" href="file:///N:/Clients/SNIA/design/SDC2018/presentations/DPCO/Dexter_Michael_Combating_Evolving_Ransomware_at_the_Block_Level.pdf" target="_blank">Download</a></td>
+<td><span class="title">A KMIP User Guide: How to Secure Applications for Today’s Cybersecurity Environment </span><span class="author">John Leiseboer</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/DPCO/Leiseboer_John_A_KMIP_User_Guide.pdf" target="_blank">Download</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Storage Failures are not Independent. What can we do about it?</span><span class="author">Jason Hathcock</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/DPCO/Hathcock_Jason_Storage_Failures_Are_Not_Independent.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/ujuEN84OzP4" target="_blank">Watch Video</a></td>
+<td><span class="title">Distributed Data Integrity Assurance and Repair Using the LOCKSS Content Audit Protocol </span><span class="author">Thib Guicherd-Callin</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/DPCO/Guicherd-Callin_T_Distributed_Data_Integrity_Assurance_and_Repair.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/ilQ8l7fDrRM" target="_blank">Watch Video</a></td>
+<td><span class="title">Protocol-Aware Recovery for Consensus-Based Storage </span><span class="author">Ramnatthan Alagappan</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/DPCO/Alagappan_Ramnatthan_Protocol_Aware_Recovery_Consensus_Based_Storage.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/fDY6Wi0GcPs" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Mitigating Evolving Ransomware Attacks at the Block Level with OpenZFS</span><span class="author">Michael Dexter</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/DPCO/Dexter_Michael_Mitigating_Evolving_Ransomware_Attacks_at_the_Block_Level_with_OpenZFS.pdf" target="_blank">Download</a></td>
+<td><span class="title">Privacy vs. Data Protection: The Impact of EU Data Protection Legislation</span><span class="author">Thomas Rivera</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/DPCO/Rivera_Thomas_Privacy_vs_Data_Protection_The_Impact_of_EU_Data_Protection_Legislation.pdf" target="_blank">Download</a></td>
+<td>&nbsp;</td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="erasure" name="erasure"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Erasure Coding</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Erasure_Coding.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Accelerated Erasure Coding: The New Frontier of Software Defined Storage </span><span class="author">Dineshkumar Bhaskaran</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Erasure_Coding/Bhaskaran_Dineshkumar_Accelerated_Erasure_Coding_The_New_Frontier_of_Software_Defined_Storage.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/4QFb2Zvr6yc" target="_blank">Watch Video</a></td>
+<td><span class="title">QuadIron: an Open Source Library for Number Theoretic Transform-Based Erasure Codes</span><span class="author">Vianney Rancurel and Giorgio Regni</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Erasure_Coding/Rancurel_V_Regni_G_QuadIron_an_Open_Source_Library_for_Number_Theoretic_Transform-Based_Erasure_Codes.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/44N5V9m2Ays" target="_blank">Watch Video</a></td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="etc" name="etc"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: none;">/etc</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/etc.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Eusocial Storage Devices: Offloading Data Management to Storage Devices that Can Act Collectively </span><span class="author">Philip Kufeldt</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/etc/Kufeldt_Philip_Eusocial_Storage.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/nJ2ZBLWnMv8" target="_blank">Watch Video</a></td>
+<td><span class="title">Updating the SNIA 100 Year Archive Survey 10 Years Later</span><span class="author">Thomas Rivera</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/etc/Rivera_Thomas_SNIA_100-Year_Archive_Survey_2017.pdf" target="_blank">Download</a></td>
+<td><span class="title">Managing Innovative Storage Technology - Key IP trends and Practices for Storage Technology Companies </span><span class="author">Steve Bachmann</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/etc/Bachmann_Steve_Managing_Innovative_Storage_Technology_Key_IP_Trends_and_Practices.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/3g4N0S_Eptc" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Overview of License Compliance in the Network Attached Storage Market</span> <span class="author">Bradley Kuhn</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/etc/Kuhn_Bradley_Overview_of_License_Compliance_in_the_Network_Attached_Storage_Market.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/U1WYETdtNik" target="_blank">Watch Video</a></td>
+<td><span class="title">Various All Flash Solution Architectures </span><span class="author">Mike Scriber</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/etc/Scriber_Mike_Various_All_Flash_Array_Architectures.pdf">Download </a><a class="video" href="https://youtu.be/VlNPOPF1gPI" target="_blank">Watch Video</a></td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="file_sys" name="file_sys"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">File Systems</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/File_Systems.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">MarFS, Marchive, and GUFI - Long Term Storage Strategies at LANL</span><span class="author">David Bonnie</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/File_Systems/Bonnie_David_MarFS_Marchive_and_GUFI_Long_Term_Storage_Strategies_at_LANL.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/8-mtxUbUjgs" target="_blank">Watch Video</a></td>
+<td><span class="title">File System Test Results Analysis </span><span class="author">Julian Cachua Fruchier and Drew Olson</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/File_Systems/Balderas_A_Olson_D_Cachua_J_File_System_Test_Results_Analysis.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/ysitJJbV14Y" target="_blank">Watch Video</a></td>
+<td><span class="title">Spiffy: Enabling File-System Aware Storage Applications</span><span class="author">Kuei Sun</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/File_Systems/Sun_Kuei_Spiffy_Enabling_File-System_Aware_Storage_Applications.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/P15ZOXmZIpk" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Simplified and Consolidated Parallel Media File System Solution </span><span class="author">M. K. Jibbe and Joey Parnell</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/File_Systems/Jibbe_MK_Parnell_J_Simplified_and_Consolidated_Parallel_Media_File_System_Solution.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/0prOfBfFgFs" target="_blank">Watch Video</a></td>
+<td><span class="title">NVMe-oF Parallel File System Achieving 2X Performance Improvement Over Legacy Filesystems and Accelerating HPC Workloads </span><span class="author">Liran Zvibel</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/File_Systems/Zvibel_Liran_NVMe-oF_Parallel_File_System_Achieving_2X_Performance_Improvement_Over_Legacy_Filesystems_and_Accelerating_HPC_Workloads.pdf">Download</a> <a class="video" href="https://youtu.be/k51N4-GcjDg" target="_blank">Watch Video</a></td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="keynote" name="keynote"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Keynote Speakers/General Sessions</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Welcome and Remarks</span><span class="author">Michael Oros</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Oros_Michael_Welcome_to_SDC_2018.pdf" target="_blank">Download</a></td>
+<td><span class="title">Tunneling through Barriers: The Key to the Evolution of Solid State Memory</span><span class="author">Andy Walker</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Walker_Andy_Tunneling_through_Barriers_The_Key_to_the_Evolution_of_Solid_State_Memories.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/scFDlgtZjhM" target="_blank">Watch Video</a></td>
+<td><span class="title">Storage Lessons from HPC: A Multi-Decadal Struggle</span><span class="author">Gary Grider</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Grider_Gary_Storage_Lessons_from_HPC_A_Multi-Decadal_Struggle.pdf" target="_blank">Download</a><a class="video" href="https://youtu.be/xQjp4v196uU" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Compute and Storage Innovations Combine to Provide a Pathway to Composable Architecture</span><span class="author">Adam Roberts</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Adam_Roberts_Compute_Storage_Innovations_Pathway_Composable_Architecture.pdf" target="_blank">Download</a><a class="video" href="https://youtu.be/la3iyCP2QU0" target="_blank">Watch Video</a></td>
+<td><span class="title">Glass: A New Media for a New Era </span><span class="author">Austin Donnelly</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Donnelly_Austin_Glass_A_New_Media_for_a_New_Era.pdf">Download </a><a class="video" href="https://youtu.be/oqMiOobuXa4" target="_blank">Watch Video</a></td>
+<td><span class="title">Thinking Fast &amp; Slow: Intuition, Reasoning, and Emerging Memory </span><span class="author">Dave Eggleston</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Dave_Eggleson_Thinking_Fast_Slow.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/DlEgxOVVw24" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Solid State Datacenter Transformation</span><span class="author">Amber Huffman</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Huffman_Solid_State_Datacenter_Transformation.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/bxICONkYvu8" target="_blank">Watch Video</a></td>
+<td><span class="title">Open Coherent Accelerator Processor Interface (OpenCAPI) for Advanced Storage</span><span class="author">Jeff Stuecheli</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Jeff_Stuechelli_OpenCAPI.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/TfjU8HAH0ls" target="_blank">Watch Video</a></td>
+<td><span class="title">Gen-Z: High-Performance Interconnect for the Data-Centric Future </span><span class="author">Kurtis Bowman</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/General_Session/Bowman_Kurtis_Gen-Z_Communication_at_the_Speed_of_Memory.pdf">Download </a><a class="video" href="https://youtu.be/Uzk3fxA7qRQ" target="_blank">Watch Video</a></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="NVMe" name="NVMe"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: none;">NVMe</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">PCI Express: What’s Next for Storage </span><span class="author">Dr. Debendra Das Sharma </span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Das_Sharma_Debendra_PCI_Express_What%CE%93%C3%87%C3%96s_Next_for_Storage.pdf">Download </a><a class="video" href="https://youtu.be/T2MiZfTWytw" target="_blank">Watch Video</a></td>
+<td><span class="title">Delivering Scalable Distributed Block Storage using NVMe over Fabrics (NVMe-oF)</span><span class="author">Mohan Kumar and Sujoy Sen</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Sen_S_Kumar_M_Distributed_Block_Storage_using_NVMe-over-Fabric.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/KbgudQ14884" target="_blank">Watch Video</a></td>
+<td><span class="title">Fibre Channel – The Most Trusted Fabric Delivers NVMe</span><span class="author">Craig Carlson</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Carlson_Craig_Fibre_Channel_NVMe.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/rcNTNt-Qmdk" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">FPGA Accelerator Disaggregation Using NVMe-over-Fabrics </span><span class="author">Sean Gibb and Stephen Bates</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Gibb_Sean_FPGA_Accelerator_Disaggregation_Using_NVMe-over-Fabrics.pdf" target="_blank">Download</a><a class="video" href="https://youtu.be/HehhazQPx4g" target="_blank">Watch Video</a></td>
+<td><span class="title">SPDK NVMe: An In-depth Look at its Architecture and Design</span><span class="author">Jim Harris</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Harris_Jim_SPDK_NVMe_In-depth_Look_at_its_Architecture_and_Design.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/pZb_Kn9D2jA" target="_blank">Watch Video</a></td>
+<td><span class="title">Key Value Storage Standardization Progress</span><span class="author">Bill Martin</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Martin_Bill_Key_Value_Storage_Standardization_Progress.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/sD6rnyx2jJ8" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Latest developments with NVMe/TCP </span><span class="author">Sagi Grimberg</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Grimberg_Sagi_Latest_Developments_with_NVMe_TCP.pdf">Download</a> <a class="video" href="https://youtu.be/z-ZVmxRngqg" target="_blank">Watch Video</a></td>
+<td><span class="title">FPGA-Based ZLIB/GZIP Compression Engine as an NVMe Namespace </span><span class="author">Saeed Fard</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Fard_Saeed_FPGA-Based_ZLIB_GZIP_Compression_as_an_NVMe_Namespace.pdf">Download </a><a class="video" href="https://youtu.be/-mFGeDfbDyU" target="_blank">Watch Video</a></td>
+<td><span class="title">Deployment of In-Storage Compute with NVMe Storage at Scale and Capacity </span><span class="author">Scott Shadley</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/NVMe/Shadley_Scott_Deployment_of_In-Storage_Compute.pdf">Download </a><a class="video" href="https://youtu.be/8Q2B0DLeHL0" target="_blank">Watch Video</a></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="pm" name="pm"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">PERSISTENT MEMORY</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">The Long &amp; Winding Road to Persistent Memories</span><span class="author">Tom Coughlin and Jim Handy</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Handy_J_Coughlin_T_The_Long_&amp;_Winding_Road_to_Persistent_Memories.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/_5fE-xXQvYY" target="_blank">Watch Video</a></td>
+<td><span class="title">Memory Class Storage, and its Impact</span><span class="author">Bill Gervasi</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Gervasi_Bill_Memory_Class_Storage_and_its_Impact.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/mThoRN5Qiy0" target="_blank">Watch Video</a></td>
+<td><span class="title">Update on the SNIA Persistent Memory Programming Model in Theory and Practice </span><span class="author">Andy Rudoff</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Andy_Rudoff_Update_SNIA_Persistent_Memory_Programming_Model.pdf">Download </a><a class="video" href="https://youtu.be/tT1pHYrGkRs" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">SNIA Nonvolatile Memory Programming TWG - Remote Persistent Memory </span><span class="author">Tom Talpey</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Talpey_Tom_Remote_Persistent_Memory.pdf">Download </a><a class="video" href="https://youtu.be/tV1IfdgmXY8" target="_blank">Watch Video</a></td>
+<td><span class="title">Introduction to Persistent Memory Configuration and Analysis Tools </span><span class="author">Steve Scargall and Usha Upadhyayula</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Upadhyayula_U_Scargall_S_Introduction_to_Persistent_Memory_Configuration_and_Analysis_Tools.pdf">Download </a><a class="video" href="https://youtu.be/IF_MLoBeQL4" target="_blank">Watch Video</a></td>
+<td><span class="title">Concurrency on Persistent Memory: Challenges and our Solution to Design Thread-safe Data Structures for Persistent Memory </span><span class="author">Sergei Vinogradov</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Sergei_Vinogradov_Concurrency_Persistent_Memory.pdf">Download </a><a class="video" href="https://youtu.be/0IUD2uhv1KI" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Real-world Performance Advantages of NVDIMM and NVMe: A Case Study with OpenZFS </span><span class="author">Nick Principe</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Principe_Nick_Real-World_Performance_Advantages_of_NVDIMM_and_NVMe_A_Case_Study_with_OpenZFS.pdf">Download </a><a class="video" href="https://youtu.be/5rdK8p4VzAU" target="_blank">Watch Video</a></td>
+<td><span class="title">Using Persistent Memory and RDMA for Ceph Client Write-back Caching </span><span class="author">Scott Peterson</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Peterson_Scott_Using_Persistent_Memory_and_RDMA_for_Ceph_Client_Writeback_Caching.pdf">Download </a><a class="video" href="https://youtu.be/aWNCW9I1Z0w" target="_blank">Watch Video</a></td>
+<td><span class="title">Challenges for Implementing PMEM Aware Application with PMDK </span><span class="author">Yoshimi Ichiyanagi</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Ichiyanagi_Yoshimi_Challenges_for_Implementing_PMEM_Aware_Application_with_PMDK.pdf">Download </a><a class="video" href="https://youtu.be/ECdgECK_z9M" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Optimize Redis with Next-gen NVM </span><span class="author">Kevin Shu</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/PM/Shu_Kevin_Optimize_Redis_with_NextGen_NVM.pdf">Download </a><a class="video" href="https://youtu.be/kOOMe1ZbM4E" target="_blank">Watch Video</a></td>
+<td>&nbsp;</td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="rdma" name="rdma"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">RDMA</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/RDMA.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Designing High-Performance Non-Volatile Memory-aware RDMA Communication Protocols for Big Data Processing</span><span class="author">Xiaoyi Lu and Dhabaleswar K. (DK) Panda</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/RDMA/Lu_Xiaoyi_Designing_High-Performance_Non-Volatile_Memory-aware_RDMA_Communication_Protocols_for_Big_Data_Processing.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/dbaCA5YOibY" target="_blank">Watch Video</a></td>
+<td><span class="title">Synchronous DR over IP fabrics with NetApp MetroCluster-IP</span><span class="author">Vijay Singh</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/RDMA/Singh_Vijay_Synchronous_DR_over_IP_Fabrics_with_NetApp_MetroCluster-IP.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/siac561tMyw" target="_blank">Watch Video</a></td>
+<td><span class="title">Bare-Metal Abstractions for Modern Hardware</span><span class="author">Cyprien Noel</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/RDMA/Noel_Cyprien_Bare_Metal_Library_Abstractions_for_Modern_Hardware.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/j6AiUhy_uGY" target="_blank">Watch Video</a></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="smb" name="smb"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">SMB</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Samba SMB-Direct Status Update</span><span class="author">Stefan Metzmacher</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/Stefan_Metzmacher_Samba_SMB-Direct_Status_Update.pdf" target="_blank">Download</a><a class="video" href="https://youtu.be/KHtPrrls-hI" target="_blank">Watch Video</a></td>
+<td><span class="title">SMB3 Landscape and Directions</span><span class="author">Mathew George and Wen Xin</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/George_Xin_SMB3_Landscape_Directions.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/JLFvLaEy_8c" target="_blank">Watch Video</a></td>
+<td><span class="title">Implementing Persistent Handles in Samba</span><span class="author">Ralph Böhme</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/Bohme_Ralph_Implementing_Persistent_Handles_Samba.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/fA78hdeYi6k" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">A New Open Source SMB2/3 Server – Running on Windows in User Mode!</span><span class="author">James Cain, PhD</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/Cain_James_A_New_Open_Source_SMB2_3_Server_Running_on_Windows_in_User_Mode!.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/BB-fX2xuPsA" target="_blank">Watch Video</a></td>
+<td><span class="title">Improving Azure File Service: Adding New Wings to a Plane in Mid-flight</span><span class="author">David Goebel</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/Goebel_Improving_Azure_File_Service.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/ud5vGkhdg7c" target="_blank">Watch Video</a></td>
+<td><span class="title">SMB in a Chewable Size; Defining a Low Level API </span><span class="author">Christopher R. Hertel</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/Hertel_Christopher_SMB_in_a_Chewable_Size_Defining_a_Low_Level_API.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/KkLa8AiyxTw" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">SMB3.11: Recent Improvements in Linux Access to the Cloud, NAS and Popular SMB3 Based Systems</span><span class="author">Steve French</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/Steve_French_SMB311.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/aTbfY84QEOs" target="_blank">Watch Video</a></td>
+<td><span class="title">Clustered Samba Scalability Improvements</span><span class="author">Volker Lendecke</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/Volker_Lendecke_Clustered_Samba_Scalability_Improvements.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/2rwK3om6sLs" target="_blank">Watch Video</a></td>
+<td><span class="title">SMB3 POSIX Protocol Extensions: Summary and Current Implementation Status </span><span class="author">Steve French and Jeremy Allison</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SMB/French_Allison_SMB3_POSIX_Protocol_Extensions.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/aTbfY84QEOs" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">SMB3-NFS Gateway over Lustre<span class="author">Ujwal Bhambani and Vinit Agnihotri</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/backups/Bhambani_Ujwal_SMB3-NFS_Gateway_over_Lustre.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/oElDEfo-rZE" target="_blank">Watch Video</a></span></td>
+<td>&nbsp;</td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="solid_nvm_pm_nvdimm" name="solid_nvm_pm_nvdimm"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Solid State Storage, NVM, PM, NVDIMM</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SSS_NVM_PM_NVDIMM.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Should I Build My All-Flash Array with SAS, SATA or NVMe? </span><span class="author">Cameron Brett</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SSS_NVM_PM_NVDIMM/Brett_Cameron_Building_An_All-Flash_Array_with_SAS_NVMe_or_SATA.pdf" target="_blank">Download</a><a class="video" href="https://youtu.be/WAzgO1kdU2w" target="_blank">Watch Video</a></td>
+<td><span class="title">Introduction to Open-Channel/Denali Solid State Drives </span><span class="author">Matias Bjørling</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SSS_NVM_PM_NVDIMM/Bjorling_Matias_Introduction_to_Open-Channel_Denali_Solid_State_Drives.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/vIei1U24lq0" target="_blank">Watch Video</a></td>
+<td><span class="title">Adding Your Own Secret Sauce to SPDK! </span><span class="author">Paul Luse</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SSS_NVM_PM_NVDIMM/Luse_P_Trahe_F_Virtual_BDEVs_The_Secret_to_Customizing_SPDK.pdf" target="_blank">Download </a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Datacenter Management of NVMe Drives </span><span class="author">Mark Carlson</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SSS_NVM_PM_NVDIMM/Carlson_Mark_Datacenter_Management_of_NVMe_Drives.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/aZION4CcZeY" target="_blank">Watch Video</a></td>
+<td><span class="title">Barrier-Enabled IO Stack for Flash Storage </span><span class="author">Youjip Won</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SSS_NVM_PM_NVDIMM/Won_Youjip_Barrier-Enabled_IO_Stack_fo_Flash_Storage.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/2T5nvfKlQ8k" target="_blank">Watch Video</a></td>
+<td><span class="title">liblightnvm: The Open-Channel SSD User-Space Library </span><span class="author">Simon Andreas Frimann Lund</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/SSS_NVM_PM_NVDIMM/Lund_Simon_A_F_liblightnvm_The_Open-Channel_SSD_User-Space_Library.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/Yow045pUv2M" target="_blank">Watch Video</a></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="stor_arch" name="stor_arch"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Storage Architecture</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Catching Up With Container Storage </span><span class="author">Keith Hudgins</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture/Hudgins_Keith_Catching_up_with_Container_Storage.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/R8SQNaiJiEA" target="_blank">Watch Video</a></td>
+<td><span class="title">Dual-Mode SSD Architecture for Next-Generation Hyperscale Data Centers: A Software/Hardware Co-Optimization Approach </span><span class="author">Feng Zhu</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture/Zhu_Feng_Dual-Mode_SSD_Architecture_for_Next-Generation_Hyperscale_Data_Centers.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/8O4yAZdunuU" target="_blank">Watch Video</a></td>
+<td><span class="title">Rethinking Ceph Architecture for Disaggregation Using NVMe-over-Fabrics </span><span class="author">Tushar Gohad, Arun Raghunath and Yi Zou</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture/Gohad_T_Zou_Y_Raghunath_A_Rethinking_Ceph_Architecture_for_Disaggregation_Using_NVMe-over-Fabrics.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/xTdtjs8f8zY" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Multi-Actuator - Increasing Parallelism in HDD Technology </span><span class="author">James Borden and Tim Walker</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture/Borden_J_Walker_T_Harnessing_HDD_Parallelism_Dual_Actuator_Implementation.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/lLBN9Mr4ynY" target="_blank">Watch Video</a></td>
+<td><span class="title">Accelerating Storage with NVM Express SSDs and P2PDMA </span><span class="author">Stephen Bates</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture/Bates_Stephen_Accelerating_Storage_with_NVM_Express_SSDs_and_P2PDMA.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/mlazYF2InLU" target="_blank">Watch Video</a></td>
+<td><span class="title">The Year in Linux Storage </span><span class="author">Martin Petersen</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture/Petersen_Martin_Recent_Developments_in_The_Linux_I_O_Stack.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/n4Anoq4Ycsw" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">A Comparison of In-storage Processing Architectures and Technologies </span><span class="author">Jerome Gaysse</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture/Gaysse_Jerome_A_Comparison_of_In-Storage_Processing_Architectures_and_Technologies.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/lvRrIGif6Aw" target="_blank">Watch Video</a></td>
+<td><span class="title">Hyper Converged and Converged Storage Platforms for ERP </span><span class="author">Bhasker Ravikanti</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Architecture/Ravikanti_Bhasker_Hyper_Converged_and_Converged_Storage_Platforms_for_ERP.pdf" target="_blank">Download</a> <a class="video" href="https://youtu.be/Rfqjl-gGyQU" target="_blank">Watch Video</a></td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="stor_perf_workloads" name="stor_perf_workloads"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Storage Performance / Workloads</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Performance.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">What's New with DiskSpd, Microsoft's Storage Performance Tool for Windows </span><span class="author">Daniel Pearson</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Performance/Daniel_Pearson_Whats_New_with_DiskSpd.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/7Muiigc3jRo" target="_blank">Watch Video</a></td>
+<td><span class="title">Solid State Storage System Methodology Status </span><span class="author">Drew Tipton and Peter Murray</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Performance/Murray_Tipton_Solid_State_Storage_System_Methodology_Status.pdf" target="_blank">Download </a></td>
+<td><span class="title">Data Driven Performance Repository to Classify and Retrieve Storage Tuning Profiles </span><span class="author">Ismael Solis Moreno</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Performance/Solis_Moreno_Ismael_Data_Driven_Performance_Repository_to_Classify_and_Retrieve_Storage_Tuning_Profiles.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/LSWwSZ7P5eI" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Auto-Scaling Caches </span><span class="author"> Irfan Ahmad</span><a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Performance/Irfan_Ahmad_Auto-Scaling_Caches.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/MRc25rA7O6Y" target="_blank">Watch Video</a></td>
+<td><span class="title">NVMe-oF: Scaling up with the Storage Performance Development Kit </span><span class="author">Benjamin Walker</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Performance/Walker_Ben_NVMe_Over_Fabrics_Scaling_Up_With_The_Storage_Performance_Development_Kit.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/IoWwaksmZPk" target="_blank">Watch Video</a></td>
+<td><span class="title">Use Only What you Really Need: Kernel Space Buffers in Server Process for Efficiency and Security</span><span class="author">Rafal Szczesniak</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Performance/Szczesniak_Rafal_Use_Only_What_you_Really_Need_Kernel_Space_Buffers_in_Server_Process.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/FXdaOSBexK0" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Machine Learning to Detect Complex Workloads in Real-time and its Applications </span><span class="author">Mahesh Khatpe and Kenny Sun</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Performance/Sun_Kenny_Machine_Learning_to_Detect_Complex_Workloads_in_Real-Time.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/FQ5d_eHDIsA" target="_blank">Watch Video</a></td>
+<td><span class="title">&nbsp;</span></td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="stor_res_mngmnt" name="stor_res_mngmnt"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Storage Resource Management</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Redfish Ecosystem Update </span><span class="author">Jeff Hilland</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Hilland_Jeff_Redfish_Ecosystem_For_Storage.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/6uBXsbyUC_A" target="_blank">Watch Video</a></td>
+<td><span class="title">Swimming With SNIA Swordfish™ </span><span class="author">Richelle Ahlvers</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Ahlvers_Richelle_Swimming_With_SNIA_Swordfish.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/svphJ48OOBE" target="_blank">Watch Video</a></td>
+<td><span class="title">A Deep Dive Sea Trek with SNIA Swordfish™</span><span class="author">Richelle Ahlvers</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Ahlvers_Richelle_A_Deep_Dive_Sea_Trek_With_SNIA_Swordfish.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/PORiKntemX8" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Fishing with Open Source Tools for SNIA Swordfish </span><span class="author">Don Deel</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Deel_Don_Fishing_with_Open_Source_Tools_for_SNIA_Swordfish.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/ik5CUTTGoAo" target="_blank">Watch Video</a></td>
+<td><span class="title">Swordfish Implementation in Rack Scale Design NVMe over Fabrics </span><span class="author">Mariusz Krzywienski and Rafal Sztejna</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Krzywienski_M_Sztejna_R_Swordfish_Implementation_in_Rack_Scale_Design_NVMe_over_Fabrics.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/7kbjTAifhgU" target="_blank">Watch Video</a></td>
+<td><span class="title">OpenSDS Flash Manageability using Swordfish for Cloud-native Frameworks </span><span class="author">Anjaneya Chagam and Steven Tan</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Chagam_A_Tan_S_OpenSDS_Manageability_using_Swordfish_for_Cloud-native_Frameworks.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/l0E6j43-1-g" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">eXtreme DataCloud: Providing Scalable Distributed Storage for the European Open Science Coud </span><span class="author">Patrick Fuhrmann</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Fuhrmann_Patrick_eXtreme_DataCloud_Providing_Scalable_Distributed_Storage_for_the_European_Open_Science_Cloud.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/gxO4oG9oEpw" target="_blank">Watch Video</a></td>
+<td><span class="title">Automation of SMI-S Managed Storage Systems with PyWBEM </span><span class="author">Karl Schopmeyer</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Schopmeyer_Karl_pywbem_Overview_for_SMI_Client_Developers.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/5Xwrar-7Jvw" target="_blank">Watch Video</a></td>
+<td><span class="title">What's better than sg3_utils, hdparm, sdparm? </span><span class="author">Muhammad Ahmad</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Ahmad_Muhammad_What%CE%93%C3%87%C3%96s_better_than_sg3utils_hd_sdparm.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/LMt8Ztlj5oQ" target="_blank">Watch Video</a></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="security" name="security"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Storage Security and Identity Management</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Stor_Sec_Identity_Mngmnt.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Protecting the Storage Platform through Measurement and Attestation</span><span class="author">Jeffrey Plank and Joe Foster</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Stor_Sec_Identity_Mngmnt/Plank_J_Foster_J_Protecting_the_Storage_Platform_through_Measurement_and_Attestation.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/okGujrdG3RA" target="_blank">Watch Video</a></td>
+<td><span class="title">How to Handle Security Flaws in a Storage Product Using Open Source Code</span><span class="author">Jeremy Allison</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Stor_Sec_Identity_Mngmnt/Allison_Jeremy_How_to_Handle_Security_Flaws_in_a_Storage_Product_Using_Open_Source_Code.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/2Nun4qVJRG8" target="_blank">Watch Video</a></td>
+<td><span class="title">Fishing with Open Source Tools for SNIA Swordfish </span><span class="author">Don Deel</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Deel_Don_Fishing_with_Open_Source_Tools_for_SNIA_Swordfish.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/ik5CUTTGoAo" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Swordfish Implementation in Rack Scale Design NVMe over Fabrics </span><span class="author">Mariusz Krzywienski and Rafal Sztejna</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Krzywienski_M_Sztejna_R_Swordfish_Implementation_in_Rack_Scale_Design_NVMe_over_Fabrics.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/7kbjTAifhgU" target="_blank">Watch Video</a></td>
+<td><span class="title">OpenSDS Flash Manageability using Swordfish for Cloud-native Frameworks </span><span class="author">Anjaneya Chagam and Steven Tan</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Chagam_A_Tan_S_OpenSDS_Manageability_using_Swordfish_for_Cloud-native_Frameworks.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/l0E6j43-1-g" target="_blank">Watch Video</a></td>
+<td><span class="title">eXtreme DataCloud: Providing Scalable Distributed Storage for the European Open Science Coud </span><span class="author">Patrick Fuhrmann</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Fuhrmann_Patrick_eXtreme_DataCloud_Providing_Scalable_Distributed_Storage_for_the_European_Open_Science_Cloud.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/gxO4oG9oEpw" target="_blank">Watch Video</a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Automation of SMI-S Managed Storage Systems with PyWBEM </span><span class="author">Karl Schopmeyer</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Schopmeyer_Karl_pywbem_Overview_for_SMI_Client_Developers.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/5Xwrar-7Jvw" target="_blank">Watch Video</a></td>
+<td><span class="title">What's better than sg3_utils, hdparm, sdparm? </span><span class="author">Muhammad Ahmad</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/Storage_Resource_Mgmt/Ahmad_Muhammad_What%CE%93%C3%87%C3%96s_better_than_sg3utils_hd_sdparm.pdf" target="_blank">Download </a><a class="video" href="https://youtu.be/LMt8Ztlj5oQ" target="_blank">Watch Video</a></td>
+<td>&nbsp;</td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p></p>
+<p><a id="backup" name="backup"></a></p>
+<p>&nbsp;</p>
+<table cellpadding="5" cellspacing="1" class="border" id="tutorialtracks" width="100%"><thead><tr align="left" valign="bottom"><th class="tutorialheading" colspan="5" style="text-transform: uppercase;">Backup Presentations</th>
+</tr></thead><tbody><tr><td colspan="3"><a class="zip" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/backups.zip" target="_blank"><strong>Download all presentations for this track</strong></a></td>
+</tr><tr align="left" class="even" valign="top"><td><span class="title">Out-of-band (OOB) Management of Storage Software through Baseboard Management Controller</span><span class="author">Piotr Wysocki and Kapil Karkra</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/backups/Wysocki_P_Karkra_K_Out-of-band%20_Management_of_Storage_Software_through_Baseboard_Management_Controller.pdf" target="_blank">Download</a><br>
+				No Video Available</td>
+<td><span class="title">High Performance Storage for Data Intensive Workloads</span><span class="author">Bo Zhang</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/backups/Zhang_Bo_High_Performance_Storage_for_Data_Intensive_Workloads.pdf" target="_blank">Download</a><br>
+				No Video Available</td>
+<td><span class="title">Unlock BDaaS efficiency with storage disaggregation and in-memory acceleration on All Flash systems</span><span class="author">Jian Zhang and Yuan Zhou</span> <a class="download" href="https://www.snia.org/sites/default/files/SDC/2018/presentations/backups/Zhang_J_Zhou_Y_Unlock_BDaaS_Efficiency_with_Storage_Disaggregation_and_in-memory_Acceleration_on_All_Flash_Systems.pdf" target="_blank">Download</a><br>
+				No Video Available</td>
+</tr><tr align="left" class="even" valign="top"><td>&nbsp;</td>
+<td><span class="title">&nbsp;</span></td>
+<td><span class="title">&nbsp;</span></td>
+</tr></tbody></table><p></p>
+<div align="center"><a href="https://www.snia.org/events/storage-developer/presentations18#top"><font size="-2">Back to Top</font></a></div>
+<p>&nbsp;</p>
+</div></div></div>  </div>
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+    <div id="after-content">
+          </div>
+  <div id="footer-wrapper"><div class="section">
+          <div id="footer" class="clearfix">
+          <div class="region region-footer">
+    <div id="block-block-65" class="block block-block">
+
+    
+  <div class="content">
+    <!-- Begin MailChimp Signup Form --><div id="mc_embed_signup">
+<form action="http://snia.us7.list-manage.com/subscribe/post?u=b421c01fc38e58ca8bdccc0be&amp;id=15e5588f66" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+<h2>Sign Up for SDC Updates</h2>
+<div class="mc-field-group"><label for="mce-EMAIL">Email </label> <input class="required email" id="mce-EMAIL" name="EMAIL" type="email" value=""></div>
+<div class="mc-field-group"><label for="mce-FNAME">First Name </label> <input class="required" id="mce-FNAME" name="FNAME" type="text" value=""></div>
+<div class="mc-field-group"><label for="mce-LNAME">Last Name </label> <input class="required" id="mce-LNAME" name="LNAME" type="text" value=""></div>
+<div class="clear" id="mce-responses">
+<div class="response" id="mce-error-response" style="display:none">&nbsp;</div>
+<div class="response" id="mce-success-response" style="display:none">&nbsp;</div>
+</div>
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--><div style="position: absolute; left: -5000px;"><input name="b_b421c01fc38e58ca8bdccc0be_15e5588f66" type="text" value=""></div>
+<div class="clear"><input class="button" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Subscribe"></div>
+</form>
+</div>
+<!--End mc_embed_signup-->  </div>
+</div>
+<div id="block-block-76" class="block block-block">
+
+    <h2>Advancing Storage and Information Techology</h2>
+  
+  <div class="content">
+    <p>Explore, discover, share, and meet other like-minded industry members. Get ahead, stay ahead, and create industry curves. Become a SNIA member today!</p>
+<p><a href="https://www.snia.org/member_com/join-SNIA">Join SNIA</a></p>
+  </div>
+</div>
+<div id="block-menu-block-14" class="block block-menu-block">
+
+    <h2>Discover SNIA</h2>
+  
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-14 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu clearfix"><li class="first leaf has-children menu-mlid-765"><a href="https://www.snia.org/about">About</a></li>
+<li class="leaf has-children menu-mlid-599"><a href="https://www.snia.org/tech_activities" title=" Standards"> <span></span> Standards</a></li>
+<li class="leaf has-children menu-mlid-598"><a href="https://www.snia.org/education" title="SNIA offers vendor-neutral storage education and certification programs on a wide range of storage networking technologies. Education"> <span>SNIA&nbsp;offers vendor-neutral storage education and certification programs on a wide range of storage networking technologies.</span> Education</a></li>
+<li class="leaf has-children menu-mlid-2967"><a href="https://www.snia.org/technology-focus">Technology Focus Areas</a></li>
+<li class="leaf has-children menu-mlid-602"><a href="https://www.snia.org/forums">Technology Communities</a></li>
+<li class="leaf has-children active-trail menu-mlid-601"><a href="https://www.snia.org/news-events" class="active-trail">News &amp; Events</a></li>
+<li class="leaf has-children menu-mlid-600"><a href="https://www.snia.org/resources">Resources</a></li>
+<li class="last leaf has-children menu-mlid-604"><a href="https://www.snia.org/member_com">Membership</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="block-block-84" class="block block-block">
+
+    <h2>Advancing Storage and Information Techology</h2>
+  
+  <div class="content">
+    <p>Explore, discover, share, and meet other like-minded industry members. Get ahead, stay ahead, and create industry curves. Become a SNIA member today!</p>
+<p><a href="https://www.snia.org/india/membership">Join SNIA India</a></p>
+  </div>
+</div>
+<div id="block-block-77" class="block block-block">
+
+    <h2>SNIA Blogs</h2>
+  
+  <div class="content">
+    <p><a href="http://sniablog.org/" target="_tab">SNIA Storage Blog</a><a href="http://www.sniacloud.com/" target="_tab">Cloud Storage Blog</a><a href="http://www.sniaesfblog.org/" target="_tab">NSF Blog</a><a href="http://sniasssiblog.org/" target="_tab">SNIA on Solid State</a></p>
+<div class="social"><a class="tw" href="https://twitter.com/SNIA" target="_tab">Twitter</a> <a class="lin" href="https://www.linkedin.com/company-beta/33718/" target="_tab">LinkedIn</a> <a class="yt" href="https://www.youtube.com/user/SNIAVideo" target="_tab">YouTube</a> <a class="fb" href="https://www.facebook.com/SNIA.ORG" target="_tab">Facebook</a></div>
+  </div>
+</div>
+<div id="block-block-4" class="block block-block">
+
+    
+  <div class="content">
+    <div class="copyright">Copyright © 2019 SNIA</div>
+<p><a href="https://www.snia.org/sitemap">Site Map</a> | <a href="https://www.snia.org/about/contact_us">Contact Us</a> | <a href="https://www.snia.org/about/privacy_policy">Privacy Policy</a></p>
+<script>
+<!--//--><![CDATA[// ><!--
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5907005-1', 'auto');
+  ga('send', 'pageview');
+
+
+//--><!]]>
+</script><script>
+<!--//--><![CDATA[// ><!--
+
+/**
+* Function that tracks a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+
+//--><!]]>
+</script>  </div>
+</div>
+  </div>
+      </div> <!-- /#footer -->
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  <script type="text/javascript" src="./2018 SDC Presentations _ SNIA_files/js_yWo7JGaHSkQlSGt6iiJRCFSPhmB4VxV6oZJ0wTaam2s.js.download"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a130e47fb0","applicationID":"7916262","transactionName":"MlEEZUNUWUBRBUdaDAsbJ1JFXFhdHwhcVwY6RAdWVGpBWlUR","queueTime":0,"applicationTime":393,"atts":"HhYHEwtOSk4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<script src="./2018 SDC Presentations _ SNIA_files/get_dynamic_config.js.download"></script><script src="./2018 SDC Presentations _ SNIA_files/get_static_config.3.51.1.1.799.8.19.13.1.1.1.1.74.js.download"></script><div id="chat-widget-container" style="opacity: 1; visibility: visible; z-index: 2147483639; position: fixed; bottom: 0px; width: 84px; height: 84px; max-width: 100%; max-height: calc(100% - 0px); min-height: 0px; min-width: 0px; background-color: transparent; border: 0px; overflow: hidden; right: 0px; transition: none 0s ease 0s !important;"><iframe src="./2018 SDC Presentations _ SNIA_files/open_chat.html" allowtransparency="true" allow="autoplay" id="chat-widget" name="chat-widget" scrolling="no" role="application" aria-label="LiveChat chat widget" style="width: 100%; height: 100%; min-height: 0px; min-width: 0px; margin: 0px; padding: 0px; background-image: none; background-position: 0% 0%; background-size: initial; background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-width: 0px; float: none; transition: none 0s ease 0s !important;"></iframe></div></body><loom-container id="lo-engage-ext-container"><loom-shadow classname="resolved"></loom-shadow></loom-container></html>
